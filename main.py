@@ -193,6 +193,9 @@ def web_scraping():
         
         print(f"Saved all available tickets to CSV.")
 
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
     finally:
         input("Press Enter to quit the browser...")
         driver.quit()
